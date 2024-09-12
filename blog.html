@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Blog without Sidebar – Kaffa</title>
+    <!-- favicon css -->
+    <link rel="shortcut icon" href="assets/img/cropped-favicon-100x100.png" type="image/x-icon">
+    <!-- icon css -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- font css -->
+    <link rel="stylesheet" href="assets/font/font.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <!-- header start -->
+    <header>
+        <nav class="navbar navbar-expand-lg position-absolute w-100">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="assets/img/kaffa_logo_light_2x.png" width="80" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-success ps-4" href="index.html">Home<i
+                      class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+                  <div class="dropdown position-absolute bg-white p-2">
+                    <ul class="p-0">
+                      <li>Natural coffee</li>
+                      <li>Coffee house</li>
+                      <li>Parallax page</li>
+                      <li>Coffee shop</li>
+                      <li>Cafeteria</li>
+                      <li>Craft coffee</li>
+                      <li>Natural coffee RTL</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-white ps-4" href="#">About us<i
+                      class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+                  <div class="dropdown position-absolute bg-white p-2">
+                    <ul class="p-0">
+                      <li>Testimonials</li>
+                      <li>FAQ</li>
+                      <li>Gallery</li>
+                      <li>404 page</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-white ps-4" href="#">products<i
+                      class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+                  <div class="dropdown position-absolute bg-white p-2">
+                    <ul class="p-0">
+                      <li>Shop</li>
+                      <a href="cart.html"><li>cart</li></a>
+                      <a href="check.html"><li>Checkout</li></a>
+                      <a href="account.html"><li>My account</li></a>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-white ps-4" href="#">Blog<i
+                      class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+                  <div class="dropdown position-absolute bg-white p-2" style="width: 230px;">
+                    <ul class="p-0">
+                      <a href="blog.html"><li>Classic blog</li></a>
+                      <li>Blog with sidebar</li>
+                      <li>Blog without sidebar</li>
+                    </ul>
+                  </div>
+                </li>
+                  <a class="nav-link active text-white ps-4" href="contact.html"><li style="font-size: 14px; font-weight: 600;">Contact us</li></a>
+              </ul>
+              <ul class="navbar-nav px-4 m-auto mb-2 mb-lg-0">
+                <li class="nav-item border border-secondary border-top-0  border-bottom-0">
+                  <a class="nav-link text-white active px-4" href="#"><i
+                      class="fa-solid fa-phone text-success pe-3"></i>0905-456-987-3</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-success" href="account.html"><i
+                      class="fa-solid fa-user border border-success p-2 me-1" style="border-radius: 50%;"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-success" href="cart.html"><i
+                      class="fa-solid fa-bag-shopping border border-success p-2 me-1" style="border-radius: 50%;"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-success" href="#"><i
+                      class="fa-solid fa-magnifying-glass border border-success p-2 me-1"
+                      style="border-radius: 50%;"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-success ps-4" href="#">Home<i
+                    class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+                <div class="dropdown position-absolute bg-white p-2">
+                  <ul class="p-0">
+                    <li>Natural coffee</li>
+                    <li>Coffee house</li>
+                    <li>Parallax page</li>
+                    <li>Coffee shop</li>
+                    <li>Cafeteria</li>
+                    <li>Craft coffee</li>
+                    <li>Natural coffee RTL</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-dark ps-4" href="#">About us<i
+                    class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+                <div class="dropdown position-absolute bg-white p-2">
+                  <ul class="p-0">
+                    <li>Testimonials</li>
+                    <li>FAQ</li>
+                    <li>Gallery</li>
+                    <li>404 page</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-dark ps-4" href="#">products<i
+                    class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+                <div class="dropdown position-absolute bg-white p-2">
+                  <ul class="p-0">
+                    <li>Shop</li>
+                    <li>Cart</li>
+                    <li>Cheakout</li>
+                    <li>My account</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-dark ps-4" href="#">Blog<i
+                    class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+                <div class="dropdown position-absolute bg-white p-2" style="width: 230px;">
+                  <ul class="p-0">
+                    <li>Blog with sidebar</li>
+                    <li>Blog without sidebar</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-dark ps-4" href="#">Contact us</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav px-4 m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white active px-4" href="#"><i
+                    class="fa-solid fa-phone text-success pe-3"></i><span class="text-dark">0905-456-987-3</span></a>
+              </li>
+            </ul>
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-success" href="#"><i
+                    class="fa-solid fa-user border border-success p-2 me-1" style="border-radius: 50%;"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-success" href="#"><i
+                    class="fa-solid fa-bag-shopping border border-success p-2 me-1" style="border-radius: 50%;"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-success" href="#"><i
+                    class="fa-solid fa-magnifying-glass border border-success p-2 me-1"
+                    style="border-radius: 50%;"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    <!-- header end -->
+
+    <!-- banner start -->
+    <section class="cart">
+        <div class="container">
+        <div class="row">
+            <div class="d-flex align-items-center justify-content-between p-0">
+                <div>
+                </div>
+                <div>
+                <h1 class="mb-4" style="font-weight: 600; font-size: 48px;">Classic Blog</h1>
+                <h5 class="d-flex justify-content-center" style="font-size: 15px;"><a href="index.html" class="text-success" style="transition: 0.5s;">Home</a> <p class="mx-2">//</p> Classic Blog without Sidebar</h5>
+                </div>
+                <div>
+                <i class="icons fa-brands fa-twitter text-success d-flex justify-content-end mb-4"></i>
+                <i class="icons fa-brands fa-facebook-f text-success d-flex justify-content-end mb-4 me-1"></i>
+                <i class="icons fa-brands fa-instagram text-success d-flex justify-content-end mb-4"></i>
+                <i class="icons fa-brands fa-youtube text-success d-flex justify-content-end mb-4"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- blog start -->
+    <section class="blogs bg-white text-dark" style="padding: 120px 0;">
+        <div class="container">
+          <div class="row">
+             <div class="blog">
+              <div class="blog-img d-flex justify-content-center"> <img src="assets/img/blog_01.jpg" class="img-fluid" alt="" width="950" height="635"></div>
+               <div class="blog-content">
+                 <button class="cart-btn bg-success rounded-5 border-0 text-white px-3 mt-3 mb-1" style="height: 30px; font-size: 13px;">Roasted Coffee</button>
+                 <h2 class="mt-2">Coffee Machine Rental and Delivery Business</h2>
+                 <p style="font-size: 14px; color: #151515b1;">Often the subject of controversy among athletes and followers of a healthy lifestyle is disputes about the admissibility of drinking coffee before or after training. This is normal because people who play sports try to monitor the health of their bodies and eat predominantly healthy and non-harmful foods. And although the composition of the coffee drink has long been studied by scientists, the debate about its effect on the body has not subsided so far. But be that as it …</p> <hr>
+                 <i class="fa-solid fa-calendar-days text-success"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600; cursor: pointer;">May 12, 2020</span>
+                 <i class="fa-solid fa-comment-dots text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">0</span>
+                 <i class="fa-solid fa-eye text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">1</span>
+               </div>
+             </div>
+             <div class="blog" style="margin-top: 70px;">
+              <div class="blog-img d-flex justify-content-center"> <img src="assets/img/blog_02.jpg" class="img-fluid" alt="" width="950" height="635"></div>
+               <div class="blog-content">
+                 <button class="cart-btn bg-success rounded-5 border-0 text-white px-3 mt-3 mb-1" style="height: 30px; font-size: 13px;">Roasted Coffee</button>
+                 <h2 class="mt-2">The Most Expensive Cup of Coffee in the Usa</h2>
+                 <p style="font-size: 14px; color: #151515b1;">Often the subject of controversy among athletes and followers of a healthy lifestyle is disputes about the admissibility of drinking coffee before or after training. This is normal because people who play sports try to monitor the health of their bodies and eat predominantly healthy and non-harmful foods. And although the composition of the coffee drink has long been studied by scientists, the debate about its effect on the body has not subsided so far. But be that as it …</p> <hr>
+                 <i class="fa-solid fa-calendar-days text-success"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600; cursor: pointer;">May 12, 2020</span>
+                 <i class="fa-solid fa-comment-dots text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">0</span>
+                 <i class="fa-solid fa-eye text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">960</span>
+               </div>
+             </div>
+             <div class="blog" style="margin-top: 70px;">
+              <div class="blog-img d-flex justify-content-center"> <img src="assets/img/blog_03.jpg" class="img-fluid" alt="" width="950" height="635"></div>
+               <div class="blog-content">
+                 <button class="cart-btn bg-success rounded-5 border-0 text-white px-3 mt-3 mb-1" style="height: 30px; font-size: 13px;">Roasted Coffee</button>
+                 <h2 class="mt-2">History of Irish Coffee</h2>
+                 <p style="font-size: 14px; color: #151515b1;">Often the subject of controversy among athletes and followers of a healthy lifestyle is disputes about the admissibility of drinking coffee before or after training. This is normal because people who play sports try to monitor the health of their bodies and eat predominantly healthy and non-harmful foods. And although the composition of the coffee drink has long been studied by scientists, the debate about its effect on the body has not subsided so far. But be that as it …</p> <hr>
+                 <i class="fa-solid fa-calendar-days text-success"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600; cursor: pointer;">May 12, 2020</span>
+                 <i class="fa-solid fa-comment-dots text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">0</span>
+                 <i class="fa-solid fa-eye text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">873</span>
+               </div>
+             </div>
+             <div class="blog" style="margin-top: 70px;">
+              <div class="blog-img d-flex justify-content-center"> <img src="assets/img/blog_04.jpg" class="img-fluid" alt="" width="950" height="635"></div>
+               <div class="blog-content">
+                 <button class="cart-btn bg-success rounded-5 border-0 text-white px-3 mt-3 mb-1" style="height: 30px; font-size: 13px;">Espresso</button>
+                 <h2 class="mt-2">Kinds of Grinding Coffee</h2>
+                 <p style="font-size: 14px; color: #151515b1;">Often the subject of controversy among athletes and followers of a healthy lifestyle is disputes about the admissibility of drinking coffee before or after training. This is normal because people who play sports try to monitor the health of their bodies and eat predominantly healthy and non-harmful foods. And although the composition of the coffee drink has long been studied by scientists, the debate about its effect on the body has not subsided so far. But be that as it …</p> <hr>
+                 <i class="fa-solid fa-calendar-days text-success"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600; cursor: pointer;">May 12, 2020</span>
+                 <i class="fa-solid fa-comment-dots text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">0</span>
+                 <i class="fa-solid fa-eye text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">828</span>
+               </div>
+             </div>
+              <div class="blog-content" style="padding: 30px; margin: 70px 0 0; background-color: #efece5;">
+                <button class="cart-btn bg-success rounded-5 border-0 text-white px-3 mb-1" style="height: 30px; font-size: 13px;">Espresso</button>
+                <h2 class="mt-2" style="font-weight: 600; transition: 0.3s;">Kinds of Grinding Coffee</h2>
+                <p style="font-size: 14px; color: #151515b1;">Often the subject of controversy among athletes and followers of a healthy lifestyle is disputes about the admissibility of drinking coffee before or after training. This is normal because people who play sports try to monitor the health of their bodies and eat predominantly healthy and non-harmful foods. And although the composition of the coffee drink has long been studied by scientists, the debate about its effect on the body has not subsided so far. But be that as it …</p> <hr>
+                <i class="fa-solid fa-calendar-days text-success"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600; cursor: pointer;">December 9, 2019</span>
+                <i class="fa-solid fa-comment-dots text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">1</span>
+                <i class="fa-solid fa-eye text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">828</span>
+              </div>
+             <div class="blog" style="margin-top: 70px;">
+               <div class="blog-img d-flex justify-content-center"> <img src="assets/img/blog_06.jpg" class="img-fluid" alt="" width="950" height="635"></div>
+                <div class="blog-content">
+                  <button class="cart-btn bg-success rounded-5 border-0 text-white px-3 mt-3 mb-1" style="height: 30px; font-size: 13px;">Green Coffee</button>
+                  <h2 class="mt-2">Delivery of Coffee Drinks</h2>
+                  <p style="font-size: 14px; color: #151515b1;">Often the subject of controversy among athletes and followers of a healthy lifestyle is disputes about the admissibility of drinking coffee before or after training. This is normal because people who play sports try to monitor the health of their bodies and eat predominantly healthy and non-harmful foods. And although the composition of the coffee drink has long been studied by scientists, the debate about its effect on the body has not subsided so far. But be that as it …</p> <hr>
+                  <i class="fa-solid fa-calendar-days text-success"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600; cursor: pointer;">December 8, 2019</span>
+                  <i class="fa-solid fa-comment-dots text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">0</span>
+                  <i class="fa-solid fa-eye text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">769</span>
+                </div>
+             </div>
+             <div class="blog" style="margin-top: 70px;">
+               <div class="blog-img d-flex justify-content-center"> <img src="assets/img/blog_05.jpg" class="img-fluid" alt="" width="950" height="635"></div>
+                <div class="blog-content">
+                  <button class="cart-btn bg-success rounded-5 border-0 text-white px-3 mt-3 mb-1" style="height: 30px; font-size: 13px;">Green Coffee</button>
+                  <h2 class="mt-2">Choosing a Home Coffee Machine</h2>
+                  <p style="font-size: 14px; color: #151515b1;">Often the subject of controversy among athletes and followers of a healthy lifestyle is disputes about the admissibility of drinking coffee before or after training. This is normal because people who play sports try to monitor the health of their bodies and eat predominantly healthy and non-harmful foods. And although the composition of the coffee drink has long been studied by scientists, the debate about its effect on the body has not subsided so far. But be that as it …</p> <hr>
+                  <i class="fa-solid fa-calendar-days text-success"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600; cursor: pointer;">November 2, 2019</span>
+                  <i class="fa-solid fa-comment-dots text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">0</span>
+                  <i class="fa-solid fa-eye text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">748</span>
+                </div>
+             </div>
+             <div class="blog text-center" style="margin-top: 70px;">
+               <div class="blog-quote border border-4 border-success" style="padding: 30px; transition: 0.3s;">
+                 <i class="fa-solid fa-quote-right text-success fs-1"></i>
+                 <p style="font-weight: 600; font-size: 18px; transition: 0.3s;" class="blog-p mt-3">Pellentesque vehicula, erat eu ullamcorper aliquam, nisi sapien tincidunt erat, vel mollis leo metus a velit. In posuere tempor ante, non gravida lectus.</p> <hr>
+                 <p class="text-success" style="font-weight: 600;">Steve Maraboli</p>
+               </div>
+             </div>
+             <div class="blog" style="margin-top: 70px;">
+              <div class="blog-img d-flex justify-content-center"> <img src="assets/img/blog_08.jpg" class="img-fluid" alt="" width="950" height="635"></div>
+               <div class="blog-content">
+                 <button class="cart-btn bg-success rounded-5 border-0 text-white px-3 mt-3 mb-1" style="height: 30px; font-size: 13px;">Chocolate</button>
+                 <h2 class="mt-2">The Difference Between Arabica and Robusta</h2>
+                 <p style="font-size: 14px; color: #151515b1;">Often the subject of controversy among athletes and followers of a healthy lifestyle is disputes about the admissibility of drinking coffee before or after training. This is normal because people who play sports try to monitor the health of their bodies and eat predominantly healthy and non-harmful foods. And although the composition of the coffee drink has long been studied by scientists, the debate about its effect on the body has not subsided so far. But be that as it …</p> <hr>
+                 <i class="fa-solid fa-calendar-days text-success"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600; cursor: pointer;">November 30, 2018</span>
+                 <i class="fa-solid fa-comment-dots text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">1</span>
+                 <i class="fa-solid fa-eye text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">796</span>
+               </div>
+             </div>
+             <div class="blog" style="margin-top: 70px;">
+              <div class="blog-img d-flex justify-content-center"> <img src="assets/img/blog_13-1024x683.jpg" class="img-fluid" alt="" width="950" height="635"></div>
+               <div class="blog-content">
+                 <button class="cart-btn bg-success rounded-5 border-0 text-white px-3 mt-3 mb-1" style="height: 30px; font-size: 13px;">Chocolate</button>
+                 <h2 class="mt-2">Coffee Storage Basics</h2>
+                 <p style="font-size: 14px; color: #151515b1;">Often the subject of controversy among athletes and followers of a healthy lifestyle is disputes about the admissibility of drinking coffee before or after training. This is normal because people who play sports try to monitor the health of their bodies and eat predominantly healthy and non-harmful foods. And although the composition of the coffee drink has long been studied by scientists, the debate about its effect on the body has not subsided so far. But be that as it …</p> <hr>
+                 <i class="fa-solid fa-calendar-days text-success"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600; cursor: pointer;">November 30, 2018</span>
+                 <i class="fa-solid fa-comment-dots text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">4</span>
+                 <i class="fa-solid fa-eye text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">930</span>
+               </div>
+             </div>
+             <div class="blog-content" style="padding: 30px; margin: 70px 0 0; background-color: #efece5;">
+              <button class="cart-btn bg-success rounded-5 border-0 text-white px-3 mb-1" style="height: 30px; font-size: 13px;">Coffee Shop</button>
+              <h2 class="mt-2" style="font-weight: 600; transition: 0.3s;">The Evolution of Coffee Shop Business</h2>
+              <p style="font-size: 14px; color: #151515b1;">Often the subject of controversy among athletes and followers of a healthy lifestyle is disputes about the admissibility of drinking coffee before or after training. This is normal because people who play sports try to monitor the health of their bodies and eat predominantly healthy and non-harmful foods. And although the composition of the coffee drink has long been studied by scientists, the debate about its effect on the body has not subsided so far. But be that as it …</p> <hr>
+              <i class="fa-solid fa-calendar-days text-success"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600; cursor: pointer;">November 30, 2018</span>
+              <i class="fa-solid fa-comment-dots text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">1</span>
+              <i class="fa-solid fa-eye text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">748</span>
+             </div>
+             <div class="blog" style="margin-top: 70px;">
+              <div class="blog-img d-flex justify-content-center"> <img src="assets/img/blog_09.jpg" class="img-fluid" alt="" width="950" height="635"></div>
+               <div class="blog-content">
+                 <button class="cart-btn bg-success rounded-5 border-0 text-white px-3 mt-3 mb-1" style="height: 30px; font-size: 13px;">Chocolate</button>
+                 <h2 class="mt-2" style="font-weight: 600;">Basic Mistakes when Making Coffee</h2>
+                 <hr>
+                 <i class="fa-solid fa-calendar-days text-success"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600; cursor: pointer;">November 30, 2018</span>
+                 <i class="fa-solid fa-comment-dots text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">3</span>
+                 <i class="fa-solid fa-eye text-success ms-4"></i><span class="text-success ms-2" style="font-size: 13px; font-weight: 600;">780</span>
+               </div>
+             </div>
+          </div>
+        </div>
+      </section>
+     <!-- blog end -->
+
+     <!-- footer start -->
+      <footer class="mt-5" style="padding: 90px 0 0;">
+      <div class="container">
+      <div class="row d-flex justify-content-between">
+          <div class="col-9 col-md-4 pb-5">
+          <img src="assets/img/kaffa_logo_light_2x.png" alt="" width="100" height="94">
+          <p class="my-5">Etiam consequat sem ullamcorper, euismod
+              metus sit amet, tristique justo. Vestibulum <br>
+              mattis, nisi ut.</p>
+          <i class="icons fa-brands fa-twitter text-success me-4 "></i>
+          <i class="icons fa-brands fa-facebook-f text-success me-4 "></i>
+          <i class="icons fa-brands fa-instagram text-success me-4 "></i>
+          <i class="icons fa-brands fa-youtube text-success me-4 "></i>
+          </div>
+          <div class="col-12 col-md-4 pb-5">
+          <h3 class="text-success mb-5">Contact Info</h3>
+          <div class="d-flex" style="cursor: pointer;">
+              <i class="fa-solid fa-location-dot fs-4 me-3 text-success"></i>
+              <div>
+              <h6 class="m-0 text-success">Our location :</h6>
+              <span class="m-0">Rio de Janeiro, RJ Brazil, 04103 Route</span>
+              </div>
+          </div>
+          <div class="d-flex mt-5" style="cursor: pointer;">
+              <i class="fa-solid fa-phone fs-5 me-3 text-success"></i>
+              <div>
+              <h6 class="m-0 text-success">Phones :</h6>
+              <span class="m-0">+49078-039-23-11 <br>+49078-028-55-60</span>
+              </div>
+          </div>
+          </div>
+          <div class="col-12 col-md-4 pb-5">
+          <h3 class="text-success mb-5">Subscribe</h3>
+          <div class="forms position-relative">
+              <form class="mb-4">
+              <input type="text" class="position-absolute" placeholder="Your email...">
+              <button class="position-absolute">Subscribe</button>
+              </form>
+          </div>
+          <input type="checkbox" name="" id="" class="ms-3 input"><span class="class ms-2" style="font-size: 13px;">I have
+              read and agree to the terms & conditions</span></input>
+          </div>
+      </div>
+      <hr style="opacity: 0.3; color: grey; margin-top: 50px;">
+      <p class="text-white py-2"><a href="#" class=" text-success">Like-themes</a> © All Rights Reserved - 2020 - <a
+          href="#" class=" text-success">Purchase</a></p>
+      </div>
+      </footer>
+     <!-- footer end -->
+
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

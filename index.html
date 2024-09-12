@@ -26,14 +26,14 @@
         <a class="navbar-brand" href="#">
           <img src="assets/img/kaffa_logo_light_2x.png" width="80" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-success ps-4" href="#">Home<i
+              <a class="nav-link active text-success ps-4" href="index.html">Home<i
                   class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
               <div class="dropdown position-absolute bg-white p-2">
                 <ul class="p-0">
@@ -65,9 +65,9 @@
               <div class="dropdown position-absolute bg-white p-2">
                 <ul class="p-0">
                   <li>Shop</li>
-                  <li>Cart</li>
-                  <li>Cheakout</li>
-                  <li>My account</li>
+                  <a href="cart.html"><li>cart</li></a>
+                  <a href="check.html"><li>Checkout</li></a>
+                  <a href="account.html"><li>My account</li></a>
                 </ul>
               </div>
             </li>
@@ -76,14 +76,13 @@
                   class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
               <div class="dropdown position-absolute bg-white p-2" style="width: 230px;">
                 <ul class="p-0">
+                  <a href="blog.html"><li>Classic blog</li></a>
                   <li>Blog with sidebar</li>
                   <li>Blog without sidebar</li>
                 </ul>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active text-white ps-4" href="#">Contact us</a>
-            </li>
+              <a class="nav-link active text-white ps-4" href="contact.html"><li style="font-size: 14px; font-weight: 600;">Contact us</li></a>
           </ul>
           <ul class="navbar-nav px-4 m-auto mb-2 mb-lg-0">
             <li class="nav-item border border-secondary border-top-0  border-bottom-0">
@@ -93,11 +92,11 @@
           </ul>
           <ul class="navbar-nav m-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-success" href="#"><i
+              <a class="nav-link active text-success" href="account.html"><i
                   class="fa-solid fa-user border border-success p-2 me-1" style="border-radius: 50%;"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active text-success" href="#"><i
+              <a class="nav-link active text-success" href="cart.html"><i
                   class="fa-solid fa-bag-shopping border border-success p-2 me-1" style="border-radius: 50%;"></i></a>
             </li>
             <li class="nav-item">
@@ -109,6 +108,89 @@
         </div>
       </div>
     </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-success ps-4" href="#">Home<i
+                class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+            <div class="dropdown position-absolute bg-white p-2">
+              <ul class="p-0">
+                <li>Natural coffee</li>
+                <li>Coffee house</li>
+                <li>Parallax page</li>
+                <li>Coffee shop</li>
+                <li>Cafeteria</li>
+                <li>Craft coffee</li>
+                <li>Natural coffee RTL</li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-dark ps-4" href="#">About us<i
+                class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+            <div class="dropdown position-absolute bg-white p-2">
+              <ul class="p-0">
+                <li>Testimonials</li>
+                <li>FAQ</li>
+                <li>Gallery</li>
+                <li>404 page</li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-dark ps-4" href="#">products<i
+                class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+            <div class="dropdown position-absolute bg-white p-2">
+              <ul class="p-0">
+                <li>Shop</li>
+                <li>Cart</li>
+                <li>Cheakout</li>
+                <li>My account</li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-dark ps-4" href="#">Blog<i
+                class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+            <div class="dropdown position-absolute bg-white p-2" style="width: 230px;">
+              <ul class="p-0">
+                <li>Blog with sidebar</li>
+                <li>Blog without sidebar</li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-dark ps-4" href="#">Contact us</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav px-4 m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white active px-4" href="#"><i
+                class="fa-solid fa-phone text-success pe-3"></i><span class="text-dark">0905-456-987-3</span></a>
+          </li>
+        </ul>
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-success" href="#"><i
+                class="fa-solid fa-user border border-success p-2 me-1" style="border-radius: 50%;"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-success" href="#"><i
+                class="fa-solid fa-bag-shopping border border-success p-2 me-1" style="border-radius: 50%;"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-success" href="#"><i
+                class="fa-solid fa-magnifying-glass border border-success p-2 me-1"
+                style="border-radius: 50%;"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
   <!-- header end -->
 
@@ -1142,6 +1224,9 @@
     </div>
   </footer>
   <!-- footer end -->
+
+ 
+
 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>

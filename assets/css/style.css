@@ -43,6 +43,9 @@ header ul li a i:hover{
     color: white;
     transition: 0.4s;
 }
+header .offcanvas ul li a i:hover{
+    color: #4d8b55;
+}
 .dropdown ul li{
     padding: 7px 10px;
     font-weight: 650;
@@ -69,6 +72,13 @@ header ul li:hover .dropdown{
 header ul li a:hover .ifco{
   transform: rotate(-90deg); 
   transition: 0.3s;
+}
+header ul li .dropdown ul li a{
+    color: #151515c7;
+    font-weight: 650!important;
+}
+header ul li .dropdown ul li a:hover{
+    color: white!important;
 }
 /* header end */
 /* banner start */
@@ -348,7 +358,7 @@ footer p a:hover{
     outline-offset: 0;
   }
   .btn-1::before,.button::before,.btn.hover-filled-slide-up::before,.btn.hover-filled-slide-up:hover::before,
-  ::after {
+  .btn-1::after,.button::after,.btn.hover-filled-slide-up::after,.btn.hover-filled-slide-up:hover::after {
     position: absolute;
     content: "";
   }
@@ -419,4 +429,136 @@ footer p a:hover{
         width: 0;
     }
 }
+@media(min-width:992px){
+    .bord{
+        border-right: 2px dotted rgba(128, 128, 128, 0.55);
+    }
+}
+@media(min-width:1200px){
+    .blogs .container{
+       padding: 0 90px;
+    }
+}
+@media(max-width:1200px){
+    .blog{
+       width: 100%;
+    }
+}
 
+
+
+
+
+/* cart start */
+.cart{
+    background-image: url('../img/inner_header_02.jpg');
+    padding: 180px 0 135px;
+    background-color: rgba(0, 0, 0, 0.596);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+.cart a:hover,.cart .icons:hover{
+    color: white!important;
+    cursor: pointer;
+}.cart .icons{
+    transition: 0.3s;
+}
+/* cart end */
+/* table start */
+.cart-form input{
+    font-size: 11px;
+    width: 25%;
+    height: 40px;
+    border: 1px solid grey;
+    padding-left: 15px;
+}
+.cart-form button{
+    font-size: 12px;
+    width: 120px;
+    height: 40px;
+    left: 15%;
+}
+.cart-table .cart-btn,.cart-btn{
+    font-size: 15px; font-weight: 600;
+    transition: 0.4s;
+    transition-delay: 0.2s;
+}
+.cart-table .cart-btn:hover,.cart-btn:hover{
+    background-color: black!important;
+}
+/* table end */
+
+
+
+
+
+/* check start */
+.check .line{
+    font-size: 13px; 
+    background-color: #f7f6f7;
+    padding: 18px 28px 14px 30px;
+}
+.check .click:hover{
+    color: darkgreen;
+    cursor: pointer;
+}
+.detail input,.detail textarea{
+    padding: 24px; font-size: 14px;
+    border-radius: 40px;
+    border: 1px solid grey;
+    margin-bottom: 20px; width: 90%;
+}
+/* check end */
+
+
+
+/* account start */
+.account input,.contact input,.contact textarea{
+    padding: 24px; font-size: 14px;
+    border-radius: 60px;
+    border: 1px solid grey;
+}
+/* account end */
+
+
+
+
+/* contact start */
+.contact .success:hover i{
+    transform: translateY(-18%);
+}
+.contact .success i{
+    transition: 0.2s;
+}
+/* contact end */
+
+
+
+
+/* blog start */
+.blog .blog-content h2:hover,.blog .blog-p:hover,.blog-content h2:hover{
+    color: #4d8b55;
+    cursor: pointer;
+}
+.blog .blog-content h2{
+    font-size: 36px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.blog .blog-quote:hover{
+    border-color: black!important;
+}
+.blog .blog-img img{
+    cursor: pointer;
+    transition: 0.4s;
+}
+.blog .blog-img img:hover{
+    transform: scale(1.1);
+}
+.blog .blog-img{
+    overflow: hidden;
+}
+/* blog end */

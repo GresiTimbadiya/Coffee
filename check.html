@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Kaffa</title>
+    <!-- favicon css -->
+    <link rel="shortcut icon" href="assets/img/cropped-favicon-100x100.png" type="image/x-icon">
+    <!-- icon css -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- font css -->
+    <link rel="stylesheet" href="assets/font/font.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+
+    <!-- header start -->
+    <header>
+      <nav class="navbar navbar-expand-lg position-absolute w-100">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/kaffa_logo_light_2x.png" width="80" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-success ps-4" href="index.html">Home<i
+                    class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+                <div class="dropdown position-absolute bg-white p-2">
+                  <ul class="p-0">
+                    <li>Natural coffee</li>
+                    <li>Coffee house</li>
+                    <li>Parallax page</li>
+                    <li>Coffee shop</li>
+                    <li>Cafeteria</li>
+                    <li>Craft coffee</li>
+                    <li>Natural coffee RTL</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white ps-4" href="#">About us<i
+                    class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+                <div class="dropdown position-absolute bg-white p-2">
+                  <ul class="p-0">
+                    <li>Testimonials</li>
+                    <li>FAQ</li>
+                    <li>Gallery</li>
+                    <li>404 page</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white ps-4" href="#">products<i
+                    class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+                <div class="dropdown position-absolute bg-white p-2">
+                  <ul class="p-0">
+                    <li>Shop</li>
+                    <a href="cart.html"><li>cart</li></a>
+                    <a href="check.html"><li>Checkout</li></a>
+                    <a href="account.html"><li>My account</li></a>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white ps-4" href="#">Blog<i
+                    class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+                <div class="dropdown position-absolute bg-white p-2" style="width: 230px;">
+                  <ul class="p-0">
+                    <a href="blog.html"><li>Classic blog</li></a>
+                    <li>Blog with sidebar</li>
+                    <li>Blog without sidebar</li>
+                  </ul>
+                </div>
+              </li>
+                <a class="nav-link active text-white ps-4" href="contact.html"><li style="font-size: 14px; font-weight: 600;">Contact us</li></a>
+            </ul>
+            <ul class="navbar-nav px-4 m-auto mb-2 mb-lg-0">
+              <li class="nav-item border border-secondary border-top-0  border-bottom-0">
+                <a class="nav-link text-white active px-4" href="#"><i
+                    class="fa-solid fa-phone text-success pe-3"></i>0905-456-987-3</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-success" href="account.html"><i
+                    class="fa-solid fa-user border border-success p-2 me-1" style="border-radius: 50%;"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-success" href="cart.html"><i
+                    class="fa-solid fa-bag-shopping border border-success p-2 me-1" style="border-radius: 50%;"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-success" href="#"><i
+                    class="fa-solid fa-magnifying-glass border border-success p-2 me-1"
+                    style="border-radius: 50%;"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-success ps-4" href="#">Home<i
+                  class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+              <div class="dropdown position-absolute bg-white p-2">
+                <ul class="p-0">
+                  <li>Natural coffee</li>
+                  <li>Coffee house</li>
+                  <li>Parallax page</li>
+                  <li>Coffee shop</li>
+                  <li>Cafeteria</li>
+                  <li>Craft coffee</li>
+                  <li>Natural coffee RTL</li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark ps-4" href="#">About us<i
+                  class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+              <div class="dropdown position-absolute bg-white p-2">
+                <ul class="p-0">
+                  <li>Testimonials</li>
+                  <li>FAQ</li>
+                  <li>Gallery</li>
+                  <li>404 page</li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark ps-4" href="#">products<i
+                  class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+              <div class="dropdown position-absolute bg-white p-2">
+                <ul class="p-0">
+                  <li>Shop</li>
+                  <li>Cart</li>
+                  <li>Cheakout</li>
+                  <li>My account</li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark ps-4" href="#">Blog<i
+                  class="ifco fa-solid fa-angle-left ps-1 text-success" style="font-size: 12px;"></i></a>
+              <div class="dropdown position-absolute bg-white p-2" style="width: 230px;">
+                <ul class="p-0">
+                  <li>Blog with sidebar</li>
+                  <li>Blog without sidebar</li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark ps-4" href="#">Contact us</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav px-4 m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white active px-4" href="#"><i
+                  class="fa-solid fa-phone text-success pe-3"></i><span class="text-dark">0905-456-987-3</span></a>
+            </li>
+          </ul>
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-success" href="#"><i
+                  class="fa-solid fa-user border border-success p-2 me-1" style="border-radius: 50%;"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-success" href="#"><i
+                  class="fa-solid fa-bag-shopping border border-success p-2 me-1" style="border-radius: 50%;"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-success" href="#"><i
+                  class="fa-solid fa-magnifying-glass border border-success p-2 me-1"
+                  style="border-radius: 50%;"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- banner start -->
+    <section class="cart">
+        <div class="container">
+        <div class="row">
+            <div class="d-flex align-items-center justify-content-between p-0">
+                <div>
+                </div>
+                <div>
+                <h1 class="mb-2" style="font-weight: 600; font-size: 48px;">Checkout</h1>
+                <h5 class="d-flex justify-content-center" style="font-size: 15px;"><a href="index.html" class="text-success" style="transition: 0.5s;">Home</a> <p class="mx-2">//</p> Checkout</h5>
+                </div>
+                <div>
+                <i class="icons fa-brands fa-twitter text-success d-flex justify-content-end mb-4"></i>
+                <i class="icons fa-brands fa-facebook-f text-success d-flex justify-content-end mb-4 me-1"></i>
+                <i class="icons fa-brands fa-instagram text-success d-flex justify-content-end mb-4"></i>
+                <i class="icons fa-brands fa-youtube text-success d-flex justify-content-end mb-4"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- banner end -->
+
+     <!-- detail start -->
+     <section class="check bg-white text-dark" style="padding: 120px 0;">
+        <div class="container">
+          <div class="row">    
+            <div class="line d-flex align-items-center border-top border-success border-3 mb-4 justify-content-between">
+              <p class="m-0">Returning customer?</p>
+              <div class="d-flex justify-content-end"><p class="click m-0">Click here to login</p></div>
+            </div>
+            <div class="line d-flex align-items-center border-top border-success border-3 mb-4 justify-content-between">
+              <p class="m-0">Have a coupon?</p>
+              <div class="d-flex justify-content-end"><p class="click m-0">Click here to enter your code</p></div>
+            </div>          
+            <div class="col-12 col-lg-6 pb-5 px-0">
+              <div class="detail">
+                <h2 style="font-size: 36px; font-weight: 600;" class="mb-3">Billing details</h2>
+                <form>
+                    <label style="font-size: 14px; margin-bottom: 5px;">First Name *</label> <br>
+                    <input type="text">  <br>
+                    <label style="font-size: 14px; margin-bottom: 5px;">Last Name *</label> <br>
+                    <input type="text">
+                    <label style="font-size: 14px; margin-bottom: 5px;">Company name (optional)</label> <br>
+                    <input type="text">
+                    <label style="font-size: 14px; margin-bottom: 5px;">Country / Region *</label> <br>
+                    <input type="text">
+                    <label style="font-size: 14px; margin-bottom: 5px;">Street address *</label> <br>
+                    <input type="text" placeholder="House number and street name">
+                    <input type="text" placeholder="Apartment, suite, unit, etc. (optional)">
+                    <label style="font-size: 14px; margin-bottom: 5px;">Town / City *</label> <br>
+                    <input type="text"> <br>
+                    <label style="font-size: 14px; margin-bottom: 5px;">State *</label> <br>
+                    <input type="text"> <br>
+                    <label style="font-size: 14px; margin-bottom: 5px;">ZIP *</label> <br>
+                    <input type="text"> <br>
+                    <label style="font-size: 14px; margin-bottom: 5px;">Phone *</label> <br>
+                    <input type="text">
+                    <label style="font-size: 14px; margin-bottom: 5px;">Email address  *</label> <br>
+                    <input type="text" class="mb-4">
+                </form>
+                <input type="checkbox" class="me-3" style="width: 13px; height: 13px;"><span style="font-size: 14px;">Create an account?</span>
+                <h2 style="font-size: 36px; font-weight: 600;" class="mb-3 mt-5">Additional information</h2>
+                    <label style="font-size: 14px; margin-bottom: 5px;">Order notes (optional)</label> <br>
+                    <textarea rows="6" class="m-0" cols="60" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <h2 style="font-size: 36px; font-weight: 600;" class="mb-3">Your order</h2>
+              <table class="table table-bordered fw-bold">
+                <thead>
+                  <tr style="border-bottom: 2px solid black;">
+                    <th scope="col" style="padding: 20px;">Nicaragua Traditional  × 1</th>
+                    <th scope="col" style="padding: 20px;">$3.49</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="padding: 20px;" class="text-end">Subtotal</td>
+                    <td style="padding: 20px;">$3.49</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 20px;" class="text-end">Total</td>
+                    <td style="padding: 20px;">$3.49</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="accordion my-5" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Direct bank transfer
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Check payments
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Cash on delivery
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Pay with cash upon delivery.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p style="background-color: #efece5; padding: 25px; font-size: 15px;" class="mb-5" >Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.</p>
+              <button class="cart-btn bg-success w-50 d-flex justify-content-center mx-auto rounded-5 border-0 text-white py-3 px-5">Place Order</button>
+            </div>
+          </div>
+        </div>
+     </section>
+     <!-- detail end -->
+
+     <!-- footer start -->
+    <footer class="mt-5" style="padding: 90px 0 0;">
+        <div class="container">
+        <div class="row d-flex justify-content-between">
+            <div class="col-9 col-md-4 pb-5">
+            <img src="assets/img/kaffa_logo_light_2x.png" alt="" width="100" height="94">
+            <p class="my-5">Etiam consequat sem ullamcorper, euismod
+                metus sit amet, tristique justo. Vestibulum <br>
+                mattis, nisi ut.</p>
+            <i class="icons fa-brands fa-twitter text-success me-4 "></i>
+            <i class="icons fa-brands fa-facebook-f text-success me-4 "></i>
+            <i class="icons fa-brands fa-instagram text-success me-4 "></i>
+            <i class="icons fa-brands fa-youtube text-success me-4 "></i>
+            </div>
+            <div class="col-12 col-md-4 pb-5">
+            <h3 class="text-success mb-5">Contact Info</h3>
+            <div class="d-flex" style="cursor: pointer;">
+                <i class="fa-solid fa-location-dot fs-4 me-3 text-success"></i>
+                <div>
+                <h6 class="m-0 text-success">Our location :</h6>
+                <span class="m-0">Rio de Janeiro, RJ Brazil, 04103 Route</span>
+                </div>
+            </div>
+            <div class="d-flex mt-5" style="cursor: pointer;">
+                <i class="fa-solid fa-phone fs-5 me-3 text-success"></i>
+                <div>
+                <h6 class="m-0 text-success">Phones :</h6>
+                <span class="m-0">+49078-039-23-11 <br>+49078-028-55-60</span>
+                </div>
+            </div>
+            </div>
+            <div class="col-12 col-md-4 pb-5">
+            <h3 class="text-success mb-5">Subscribe</h3>
+            <div class="forms position-relative">
+                <form class="mb-4">
+                <input type="text" class="position-absolute" placeholder="Your email...">
+                <button class="position-absolute">Subscribe</button>
+                </form>
+            </div>
+            <input type="checkbox" name="" id="" class="ms-3 input"><span class="class ms-2" style="font-size: 13px;">I have
+                read and agree to the terms & conditions</span></input>
+            </div>
+        </div>
+        <hr style="opacity: 0.3; color: grey; margin-top: 50px;">
+        <p class="text-white py-2"><a href="#" class=" text-success">Like-themes</a> © All Rights Reserved - 2020 - <a
+            href="#" class=" text-success">Purchase</a></p>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
